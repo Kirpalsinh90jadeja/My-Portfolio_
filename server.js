@@ -6,7 +6,7 @@ const path = require('path');//Import path modules
 
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 
 const username=process.env.EMAIL_USER;
