@@ -38,7 +38,7 @@ app.post('/submit-form',(req,res)=>{
         -Name:${firstName} 
         -Subject:${subject}
         -Email:${email}
-        -Message:${message}`,
+        -Message:${message}`
     };
     
     transporter.sendMail(mailOptions,(error,info)=>{
@@ -79,7 +79,7 @@ app.post('/submit-form',(req,res)=>{
     <body>
       <h1>Thank you. ${firstName} !</h1>
             <p>We have recieved your message and will get back to you shortly.</p>
-            <a href="/">◀️Go Back to Contact form</a>
+            <a href="/">◀Go Back to Contact form</a>
     </body>
     </html>
 
